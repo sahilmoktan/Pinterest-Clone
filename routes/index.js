@@ -4,11 +4,11 @@ const userModel = require("./users");
 const postModel = require("./post");
 const passport = require("passport");
 const localStrategy = require("passport-local");
-passport.authenticate(new localStrategy(userModel.authenticate()));
+passport.use(new localStrategy(userModel.authenticate()));
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "Express" });
+  res.render("index");
 });
 
 router.post("/register", function (req, res) {
@@ -23,7 +23,7 @@ router.post("/register", function (req, res) {
       res.redirect("/profile");
     });
   });
-  res.send(createdman);
+  // res.send(createdman);
 });
 
 router.post(
@@ -36,13 +36,10 @@ router.post(
 );
 
 router.post("/logout", function (req, res) {
-  req.logout(function (err) {
-    if (err) {
-      return next(err);
-    }
-    res.redirect("/");
-  });
+  req.logout(); // Corrected: calling logout on the req object
+  res.redirect("/");
 });
+
 
 function isLoggedIn(req, res, next) {
   if (req.isAuthenticated()) return next();
@@ -50,8 +47,11 @@ function isLoggedIn(req, res, next) {
 }
 
 router.get("/profile", isLoggedIn, function (req, res, next) {
+  res.send("profile");
+});
 
-res.send('profile')
+router.get('/login',function(req, res, next){
+  res.render('login')
 })
 
 module.exports = router;

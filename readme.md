@@ -17,6 +17,10 @@ till this commit : reg working, login working, both page switching connected, bu
 
 
 then after feed page add gare
+![Screenshot from 2023-11-16 18-37-33](https://github.com/sahilmoktan/Pinterest-Clone/assets/103031235/5f3907ab-d5aa-4afc-8450-9df316c8e796)
+
 
 
 ani profile page pani ejs banayo, booststrap halka mix xa
+![Screenshot from 2023-11-16 18-37-13](https://github.com/sahilmoktan/Pinterest-Clone/assets/103031235/dd5bb02e-1638-4b82-b358-71aa38570b22)
+

@@ -35,9 +35,17 @@ router.post(
   function (req, res) {}
 );
 
-router.post("/logout", function (req, res) {
-  req.logout(); // Corrected: calling logout on the req object
-  res.redirect("/");
+// router.get("/logout", function (req, res) {
+//   req.logout(); // Corrected: calling logout on the req object
+//   res.redirect("/");
+// });
+router.get("/logout", function (req, res) {
+  req.logout(function (err) {
+    if (err) {
+      return next(err);
+    }
+    res.redirect("/");
+  });
 });
 
 
@@ -47,11 +55,15 @@ function isLoggedIn(req, res, next) {
 }
 
 router.get("/profile", isLoggedIn, function (req, res, next) {
-  res.send("profile");
+  res.render("profile");
 });
 
 router.get('/login',function(req, res, next){
   res.render('login')
+})
+
+router.get('/feed',function(req, res, next){
+  res.render('feed')
 })
 
 module.exports = router;

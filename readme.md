@@ -24,3 +24,6 @@ then after feed page add gare
 ani profile page pani ejs banayo, booststrap halka mix xa
 ![Screenshot from 2023-11-16 18-37-13](https://github.com/sahilmoktan/Pinterest-Clone/assets/103031235/dd5bb02e-1638-4b82-b358-71aa38570b22)
 
+
+
+laptop change

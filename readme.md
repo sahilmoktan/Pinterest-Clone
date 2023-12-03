@@ -27,4 +27,3 @@ ani profile page pani ejs banayo, booststrap halka mix xa
 
 
 laptop change
-git remote add origin https://github.com/sahilmoktan/Pinterest-Clone

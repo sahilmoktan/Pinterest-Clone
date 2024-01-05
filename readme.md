@@ -40,3 +40,5 @@ then profile ma /logout , show user's name and id
 post where has post, image and caption by using multer:
 npm i uuid multer,
 uuid gives uique id , multer allows upload imges
+created multer file code, imported it on index.js
+file uploaded with extename but left to save it's id for showing as a post with it's caption

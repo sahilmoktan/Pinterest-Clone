@@ -32,3 +32,7 @@ laptop change test
 login garda password mistake huda kai error audaina so, gonna show error flash message
 for flash messages : npm i connect-flash
 failureFlash: true added
+required in app.js too 
+
+then profile ma /logout , show user's name and id
+

@@ -30,7 +30,8 @@ router.post(
   "/login",
   passport.authenticate("local", {
     successRedirect: "/profile",
-    failureRedirect: "/",
+    failureRedirect: "/login",
+    failureFlash: true
   }),
   function (req, res) {}
 );
@@ -59,7 +60,8 @@ router.get("/profile", isLoggedIn, function (req, res, next) {
 });
 
 router.get('/login',function(req, res, next){
-  res.render('login')
+  // console.log(req.flash('error'))
+  res.render('login',{error:req.flash('error')})
 })
 
 router.get('/feed',function(req, res, next){

@@ -148,3 +148,10 @@ hr {
   text-decoration: none;
   color: black;
 }
+.error{
+  font-weight: 500;
+  margin: 7px 0;
+  text-transform: capitalize;
+  color: red;
+
+}

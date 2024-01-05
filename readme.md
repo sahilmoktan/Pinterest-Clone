@@ -35,10 +35,15 @@ for flash messages : npm i connect-flash
 failureFlash: true added
 required in app.js too 
 
-then profile ma /logout , show user's name and id
+then profile ma /logout , show user's name and id: <%= user.fullname %>
 
 post where has post, image and caption by using multer:
 npm i uuid multer,
 uuid gives uique id , multer allows upload imges
 created multer file code, imported it on index.js
 file uploaded with extename but left to save it's id for showing as a post with it's caption
+
+
+now user can post and profile looks like this
+![Screenshot 2024-01-05 152228](https://github.com/sahilmoktan/Pinterest-Clone/assets/103031235/f55cda05-2320-4c53-b080-5e4bdc479277)
+

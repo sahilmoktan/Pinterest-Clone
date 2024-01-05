@@ -27,6 +27,7 @@ ani profile page pani ejs banayo, booststrap halka mix xa
 
 
 laptop change test
+if nodemon not working poweshell run as administrator then, : Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 
 -- 2024 jan 2
 login garda password mistake huda kai error audaina so, gonna show error flash message
@@ -36,3 +37,6 @@ required in app.js too
 
 then profile ma /logout , show user's name and id
 
+post where has post, image and caption by using multer:
+npm i uuid multer,
+uuid gives uique id , multer allows upload imges
